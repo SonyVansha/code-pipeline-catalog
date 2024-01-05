@@ -46,17 +46,33 @@ Course Catalog Service is using several services that exist in AWS such as S3, R
 
 <br>
 
+## Production Parameter
+
 | KEY NAME  | Parameter Type | Description  |
 |--|--|--|
-| **AWS_BUCKET_NAME** | String | Bucket name is use to store assets data like catalog *thumnail*. |
-|**AWS_BUCKET_REGION**| String | Region of the bucket is used |
-| **AWS_CF_KEY_PAIR_ID** | SecureString | CloudFront public key pair id |
-| **AWS_CF_PRIVATE_KEY** | SecureString | CloudFront private key |
-| **AWS_CF_URL** | String | CloudFont distribution URL |
-| **DB_HOST** | String | Database host |
-| **DB_NAME** | String | Database name |
-| **DB_USER** | String | Database username |
-| **DB_PASSWORD** | SecureString | Database password |
+| **/course-catalog/production/AWS_BUCKET_NAME** | String | Bucket name is use to store assets data like catalog *thumnail*. |
+|**/course-catalog/production/AWS_BUCKET_REGION**| String | Region of the bucket is used |
+| **/course-catalog/production/AWS_CF_KEY_PAIR_ID** | SecureString | CloudFront public key pair id |
+| **/course-catalog/production/AWS_CF_PRIVATE_KEY** | SecureString | CloudFront private key |
+| **/course-catalog/production/AWS_CF_URL** | String | CloudFont distribution URL |
+| **/course-catalog/production/DB_HOST** | String | Database host |
+| **/course-catalog/production/DB_NAME** | String | Database name |
+| **/course-catalog/production/DB_USER** | String | Database username |
+| **/course-catalog/production/DB_PASSWORD** | SecureString | Database password |
+
+## Testing Parameter
+
+| KEY NAME  | Parameter Type | Description  |
+|--|--|--|
+| **/course-catalog/testing/AWS_BUCKET_NAME** | String | Bucket name is use to store assets data like catalog *thumnail*. |
+|**/course-catalog/testing/AWS_BUCKET_REGION**| String | Region of the bucket is used |
+| **/course-catalog/testing/AWS_CF_KEY_PAIR_ID** | SecureString | CloudFront public key pair id |
+| **/course-catalog/testing/AWS_CF_PRIVATE_KEY** | SecureString | CloudFront private key |
+| **/course-catalog/testing/AWS_CF_URL** | String | CloudFont distribution URL |
+| **/course-catalog/testing/DB_HOST** | String | Database host |
+| **/course-catalog/testing/DB_NAME** | String | Database name |
+| **/course-catalog/testing/DB_USER** | String | Database username |
+| **/course-catalog/testing/DB_PASSWORD** | SecureString | Database password |
 
 #### Run Unit Test
 You can easily run unit tests for Course Catalog Services for production test with the following command:
